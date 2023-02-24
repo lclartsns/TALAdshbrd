@@ -1,0 +1,365 @@
+:root{
+  --primary-color: rgba(13, 110, 139, 0.45);
+  --secondary-color: rgba(248, 183, 62, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --modal-duration: 1s;
+  --modal-color: #428bca;
+} 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+.main-container{
+  min-height: 100%; 
+
+ }
+ .content{
+  overflow: auto;
+  
+ }
+ html,body{
+   height: 100%;
+ }
+.container{
+  margin: auto;
+  padding: 0 5.5rem;
+  position: relative;
+  overflow:auto;
+}
+a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  padding: 0 80px;
+  background: linear-gradient(106deg, #FAF884 0%, rgba(38, 51, 24, 0.596)8% );
+  width: 100%;
+  height: 100px; 
+  box-sizing: border-box;
+
+  border-bottom: #EAC117 3px solid;
+
+}
+/*logo size*/
+header .logo{
+  max-width: 135px;
+  float: left;
+  margin-top: 1.0rem;
+  margin-left: -2%;
+  
+}
+header nav{
+  float:right;
+}
+
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li{
+  list-style:none;
+}
+/*spacing of menu*/
+header nav ul li a{
+  text-decoration: none;
+  line-height: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  display:block;
+  font-weight: bold;
+  
+}
+
+header nav ul li a:hover{
+  color: var(--secondary-color);
+  /* background-color: #F4BC1C; */
+  /*color: white;
+  padding: 5px 10px; /* 5px top/bottom, 10px left/right */
+}
+
+.menu-toggle{
+  color: white;
+  float: right;
+  line-height: 100px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  
+}
+
+/*header-content - title card*/
+.header-content{
+  color: black;
+  background: url('../img/mlt2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width:100%;
+  text-align: left; 
+  padding-left: 5%;
+
+}
+h2{
+  padding-top: 12%;
+  /*line-height: 1.2;*/
+  font-family: 'Arial Black'; /*,'Roboto Mono', cursive;*/
+  color: black;
+  font-size: 3.6em;
+}
+h3{
+  padding-top: 3%;
+  font-family: 'Century Gothic';
+  color: black;
+  font-size: 1.6em;
+}
+.txt-type{
+  color: #F4BC1C; /*var(--secondary-color);*/
+}
+/*About Me*/
+.text-center{
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  color: #545454;
+  margin-top: 1rem;
+}
+.bottom-line{
+  border: 1px solid #F4BC1C;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4%;
+  margin-top: -2rem;
+}
+.section-title{
+  font-size:5rem;
+}
+.text-color{
+  color: #F4BC1C;
+}
+h4{
+  font-size:2rem;
+}
+.desc{
+  font-size:1rem;
+}
+h5{
+  font-size: 1.3rem;
+}
+h6{
+  font-style: italic;
+  font-size:1rem;
+}
+.job{
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: var(--primary-color);
+  border-bottom: var(--overlay-color) 3px solid;
+}
+/*Services*/
+.nav_services{
+  list-style: none;
+}
+.nav_services li{
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: var(--primary-color);
+  border-bottom: var(--overlay-color) 3px solid;
+  
+}
+.services-list{
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns:repeat(3, 1fr);
+}
+.skill-ps{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns:repeat(1, 1fr);
+}
+.fas{
+  color: var(--secondary-color);
+}
+.ps{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/*Section: Contact*/
+.social-menu{
+  list-style: none;
+  margin: 2rem;
+}
+.social-menu li{
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+.social-menu ul li a:hover{
+  color: var(--secondary-color)
+}
+/*Padding Content Section*/
+#home-about, #services, #contact {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+/*Main: Footer*/
+#main-footer{
+  position: relative; 
+  clear:both;
+  background: var(--overlay-color);
+  text-align: center;
+  bottom: 0;
+  padding: 5px;
+}
+
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+
+/* .mbutton {
+  background: #428bca;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* .mbutton:hover {
+  background: #3876ac;
+} */
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+.modal-content {
+  margin: 10% auto;
+  width: 30%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+body.modal-open {
+  overflow: scroll !important;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: linear-gradient(45deg,#e8e538,rgba(248, 183, 62, 0.9));
+  padding: 20px;
+  color: #fff;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 10px 25px;
+  background: #fff; 
+  display: flex;
+  justify-content: center;
+} 
+
+/* .modal-bttn {
+  padding-bottom: 10px;
+  background: #fff; 
+  
+  display: flex;
+  justify-content: center;
+}  */
+.modal-rst {
+  background: #fff; 
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+} 
+
+.buttonrst {
+  justify-content: center;
+  background-image: linear-gradient(45deg,#e8e538,rgba(248, 183, 62, 0.9));
+
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+/* .modal-content button {
+  font-family: 'Century Gothic';
+  outline: 0;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+} */
+
+.modal-footer {
+  background: linear-gradient(45deg,#e8e538,rgba(248, 183, 62, 0.9));
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 20px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */
+/* <!--Section: Modal--> */

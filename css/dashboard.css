@@ -1,0 +1,140 @@
+:root{
+    --primary-color: rgba(13, 110, 139, 0.45);
+    --secondary-color: rgba(248, 183, 62, 0.9);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --modal-duration: 1s;
+    --modal-color: #428bca;
+  } 
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .main-container{
+    min-height: 100%; 
+  
+   }
+   .content{
+    overflow: auto;
+    
+   }
+   html,body{
+     height: 100%;
+   }
+  .container{
+    margin: auto;
+    padding: 0 5.5rem;
+    position: relative;
+    overflow:auto;
+  }
+  a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 0 80px;
+    background: linear-gradient(106deg, #FAF884 0%, rgba(38, 51, 24, 0.596)8% );
+    width: 100%;
+    height: 100px; 
+    box-sizing: border-box;
+    border-bottom: #EAC117 3px solid;
+  
+  }
+  /*logo size*/
+  header .logo{
+    max-width: 100px;
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: -4%;
+    
+  }
+  /*Menu position*/
+  header nav{
+    float:right;
+    margin-right: -4%;
+  }
+  
+  header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  header nav ul li{
+    list-style:none;
+
+  }
+  /*spacing of menu*/
+  header nav ul li a{
+    text-decoration: none;
+    line-height: 100px;
+    padding: 0 10px;
+    color: #ffffff;
+    display:block;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover{
+    color: var(--secondary-color);
+    /* background-color: #F4BC1C; */
+    /*color: white;
+    padding: 5px 10px; /* 5px top/bottom, 10px left/right */
+  }
+  
+  /* .menu-toggle{
+    color: white;
+    float: right;
+    line-height: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  } */
+  
+  /*header-content - title card*/
+  .header-content{
+    color: black;
+    /* background: url('../img/mlt2.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:100%;
+    text-align: left; 
+    padding-left: 5%;
+  
+  }
+  /*TALA*/
+  h3{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline;
+    margin-left: -13%;
+    line-height: 100px;
+  }
+  .txt-type{
+    color: #F4BC1C; /*var(--secondary-color);*/
+  }
+
+ .navigation {
+    float: left;
+    margin-left: -8%;
+    display: flex;
+    margin-top: 70px;
+}
+
+.navigation ul li a{
+    color: black;
+    padding: 0 3px;
+}
+
+/*close*/
+/*CLOSE BUTTON*/
